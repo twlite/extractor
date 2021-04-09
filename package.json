@@ -1,0 +1,16 @@
+{
+  "name": "@discord-player/extractor",
+  "version": "1.0.4",
+  "description": "Some extractors for discord-player",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Snowflake107",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^16.5.2",
+    "node-fetch": "^2.6.1",
+    "reverbnation-scraper": "^2.0.0"
+  }
+}
