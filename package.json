@@ -1,6 +1,6 @@
 {
   "name": "@discord-player/extractor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Some extractors for discord-player",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,22 @@
     "jsdom": "^16.5.2",
     "node-fetch": "^2.6.1",
     "reverbnation-scraper": "^2.0.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Snowflake107/discord-player-extractors.git"
+  },
+  "keywords": [
+    "discord-player",
+    "extractor",
+    "streams"
+  ],
+  "bugs": {
+    "url": "https://github.com/Snowflake107/discord-player-extractors/issues"
+  },
+  "homepage": "https://github.com/Snowflake107/discord-player-extractors#readme"
 }
