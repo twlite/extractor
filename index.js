@@ -6,6 +6,7 @@ module.exports = {
     },
     Attachment: require("./src/Attachment"),
     Facebook: require("./src/Facebook"),
+    Lyrics: require("./src/ext/Lyrics"),
     Reverbnation: require("./src/Reverbnation"),
     Vimeo: require("./src/Vimeo"),
     version: require("./package.json").version
