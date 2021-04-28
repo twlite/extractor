@@ -1,6 +1,6 @@
 {
   "name": "@discord-player/extractor",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Some extractors for discord-player",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,6 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Snowflake107/discord-player-extractors.git"

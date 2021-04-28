@@ -11,7 +11,7 @@ module.exports.getInfo = async (query) => {
     if (!data || !formats.some(x => data.format.startsWith(x))) return null;
 
     return {
-        title: "Attachment",
+        title: data.url.split("/").filter(x => x.length).pop() ?? "Attachment",
         duration: 0,
         thumbnail: "https://upload.wikimedia.org/wikipedia/commons/2/2a/ITunes_12.2_logo.png",
         engine: data.url,
