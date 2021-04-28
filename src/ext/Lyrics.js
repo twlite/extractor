@@ -1,7 +1,8 @@
 const { Client } = require("genius-lyrics");
-const client = new Client(process.env.GENIUS_API_KEY);
+let client;
 
-module.exports = function(query) {
+
+module.exports.query = function (query) {
     return new Promise((resolve, reject) => {
         if (typeof query !== "string") return reject(new TypeError(`Expected search query to be a string, received "${typeof query}"!`));
 
@@ -29,3 +30,6 @@ module.exports = function(query) {
             });
     });
 };
+module.exports.apiKey = function (key) {
+    client = new Client(key);
+}
