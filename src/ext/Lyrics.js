@@ -1,12 +1,12 @@
 const { Client } = require("genius-lyrics");
-let client;
+let geniusClient;
 
 
 module.exports.query = function (query) {
     return new Promise((resolve, reject) => {
         if (typeof query !== "string") return reject(new TypeError(`Expected search query to be a string, received "${typeof query}"!`));
 
-        client.songs.search(query)
+        geniusClient.songs.search(query)
             .then(async songs => {
                 const data = {
                     title: songs[0].title,
@@ -31,5 +31,5 @@ module.exports.query = function (query) {
     });
 };
 module.exports.apiKey = function (key) {
-    client = new Client(key);
+    geniusClient = new Client(key);
 }
