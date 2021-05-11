@@ -1,9 +1,9 @@
-const Facebook = require("./internal/Facebook");
+import { Facebook } from './internal/Facebook';
 
-module.exports.validate = Facebook.validateURL;
+export const validate = Facebook.validateURL;
 
-module.exports.getInfo = async (query) => {
-    const data = await Facebook.getInfo(query).catch(() => { });
+export const getInfo = async (query: string) => {
+    const data = await Facebook.getInfo(query).catch(() => {});
     if (!data) return null;
 
     return {
@@ -16,6 +16,6 @@ module.exports.getInfo = async (query) => {
         description: data.description,
         url: data.url
     };
-}
+};
 
-module.exports.important = true;
+export const important = true;

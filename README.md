@@ -14,8 +14,9 @@ player.use("reverbnation", Reverbnation);
 # Lyrics
 ```js
 const { Lyrics } = require("@discord-player/extractor");
+const lyricsClient = Lyrics.init("api_key_or_leave_it_blank");
 
-Lyrics("alan walker faded")
+lyricsClient.search("alan walker faded")
     .then(x => console.log(x))
     .catch(console.error);
 ```
