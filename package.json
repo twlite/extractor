@@ -1,25 +1,28 @@
 {
   "name": "@discord-player/extractor",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Some extractors for discord-player",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "cd test && node index.js"
+    "test": "yarn build && cd test && node index.js",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "author": "Snowflake107",
   "license": "MIT",
   "dependencies": {
-    "genius-lyrics": "^4.2.7",
-    "jsdom": "^16.5.2",
+    "genius-lyrics": "^4.2.9",
+    "jsdom": "^16.5.3",
     "node-fetch": "^2.6.1",
     "reverbnation-scraper": "^2.0.0"
   },
-  "directories": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Snowflake107/discord-player-extractors.git"
+    "url": "git+https://github.com/DevSnowflake/discord-player-extractors.git"
   },
   "keywords": [
     "discord-player",
@@ -27,7 +30,14 @@
     "streams"
   ],
   "bugs": {
-    "url": "https://github.com/Snowflake107/discord-player-extractors/issues"
+    "url": "https://github.com/DevSnowflake/discord-player-extractors/issues"
   },
-  "homepage": "https://github.com/Snowflake107/discord-player-extractors#readme"
+  "homepage": "https://github.com/DevSnowflake/discord-player-extractors#readme",
+  "devDependencies": {
+    "@types/jsdom": "^16.2.10",
+    "@types/node": "^15.0.1",
+    "@types/node-fetch": "^2.5.10",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4"
+  }
 }
