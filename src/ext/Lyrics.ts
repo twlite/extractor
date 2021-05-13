@@ -9,7 +9,7 @@ export function init(apiKey?: string, force?: boolean) {
     return { search, client };
 }
 
-function search(query: string) {
+function search(query: string): Promise<LyricsData | null> {
     return new Promise<LyricsData>((resolve, reject) => {
         if (typeof query !== 'string')
             return reject(new TypeError(`Expected search query to be a string, received "${typeof query}"!`));

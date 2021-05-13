@@ -1,24 +1,27 @@
 # Extractors
+
 Extractors for `discord-player`.
 
 # Example
 
 ```js
-const { Reverbnation } = require("@discord-player/extractor");
+const { Reverbnation } = require('@discord-player/extractor');
 const player = new Player(client);
 
 // enables reverbnation player
-player.use("reverbnation", Reverbnation);
+player.use('reverbnation', Reverbnation);
 ```
 
 # Lyrics
-```js
-const { Lyrics } = require("@discord-player/extractor");
-const lyricsClient = Lyrics.init("api_key_or_leave_it_blank");
 
-lyricsClient.search("alan walker faded")
-    .then(x => console.log(x))
-    .catch(console.error);
+```js
+const { Lyrics } = require('@discord-player/extractor');
+const lyricsClient = Lyrics.init('api_key_or_leave_it_blank');
+
+lyricsClient
+    .search('alan walker faded')
+    // This will return `null` if no results are found.
+    .then((x) => console.log(x))
 ```
 
 ## Response
