@@ -8,7 +8,7 @@ export const getInfo = async (query: string) => {
 
     return {
         playlist: null as any,
-        info: {
+        info: [{
             title: data.title,
             duration: data.duration,
             thumbnail: data.thumbnail,
@@ -17,7 +17,7 @@ export const getInfo = async (query: string) => {
             author: data.author.name,
             description: data.description,
             url: data.url
-        }
+        }]
     };
 };
 

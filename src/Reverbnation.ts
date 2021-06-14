@@ -12,7 +12,7 @@ export const getInfo = async (query: string) => {
 
     return {
         playlist: null as any,
-        info: {
+        info: [{
             title: data.title,
             duration: data.duration,
             thumbnail: data.thumbnail,
@@ -21,7 +21,7 @@ export const getInfo = async (query: string) => {
             author: data.artist.name,
             description: '',
             url: data.url
-        }
+        }]
     } as Reverbnation;
 };
 
@@ -35,7 +35,8 @@ export interface Reverbnation {
         views: number;
         author: string;
         url: string;
-    };
+        description: string;
+    }[];
 }
 
 export const important = true;

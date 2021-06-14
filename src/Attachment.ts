@@ -13,7 +13,7 @@ export const getInfo = async (query: string) => {
 
     return {
         playlist: null as any,
-        info: {
+        info: [{
             title: (
                 data.url
                     .split('/')
@@ -29,7 +29,7 @@ export const getInfo = async (query: string) => {
             author: (data.stream as any).client.servername as string,
             description: (data.stream as any).client.servername as string,
             url: data.url
-        }
+        }]
     };
 };
 
