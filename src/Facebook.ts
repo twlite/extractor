@@ -7,14 +7,17 @@ export const getInfo = async (query: string) => {
     if (!data) return null;
 
     return {
-        title: data.title,
-        duration: data.duration,
-        thumbnail: data.thumbnail,
-        engine: data.streamURL,
-        views: parseInt(data.views) || 0,
-        author: data.author.name,
-        description: data.description,
-        url: data.url
+        playlist: null as any,
+        info: {
+            title: data.title,
+            duration: data.duration,
+            thumbnail: data.thumbnail,
+            engine: data.streamURL,
+            views: parseInt(data.views) || 0,
+            author: data.author.name,
+            description: data.description,
+            url: data.url
+        }
     };
 };
 
