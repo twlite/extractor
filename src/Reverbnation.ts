@@ -11,25 +11,31 @@ export const getInfo = async (query: string) => {
     if (!data) return null;
 
     return {
-        title: data.title,
-        duration: data.duration,
-        thumbnail: data.thumbnail,
-        engine: data.streamURL,
-        views: 0,
-        author: data.artist.name,
-        description: '',
-        url: data.url
+        playlist: null as any,
+        info: {
+            title: data.title,
+            duration: data.duration,
+            thumbnail: data.thumbnail,
+            engine: data.streamURL,
+            views: 0,
+            author: data.artist.name,
+            description: '',
+            url: data.url
+        }
     } as Reverbnation;
 };
 
 export interface Reverbnation {
-    title: string;
-    duration: number;
-    thumbnail: string;
-    engine: string;
-    views: number;
-    author: string;
-    url: string;
+    playlist: any;
+    info: {
+        title: string;
+        duration: number;
+        thumbnail: string;
+        engine: string;
+        views: number;
+        author: string;
+        url: string;
+    };
 }
 
 export const important = true;
