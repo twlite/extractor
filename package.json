@@ -15,7 +15,7 @@
   "author": "Snowflake107",
   "license": "MIT",
   "dependencies": {
-    "genius-lyrics": "^4.2.9",
+    "genius-lyrics": "^4.3.5",
     "jsdom": "^16.5.3",
     "node-fetch": "^2.6.1",
     "reverbnation-scraper": "^2.0.0"
