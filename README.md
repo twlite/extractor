@@ -15,7 +15,7 @@ player.use("reverbnation", Reverbnation);
 
 ```ts
 import { Reverbnation } from "@discord-player/extractor";
-const player = new Player(client)
+const player = new Player(client);
 
 // enables reverbnation player
 player.use("reverbnation", Reverbnation);
