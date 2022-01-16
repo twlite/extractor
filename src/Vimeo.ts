@@ -16,16 +16,18 @@ export const getInfo = async (query: string) => {
 
     return {
         playlist: null as any,
-        info: [{
-            title: data.title,
-            duration: data.duration * 1000,
-            thumbnail: data.thumbnail,
-            engine: data.stream.url,
-            views: 0,
-            author: data.author.name,
-            description: '',
-            url: data.url
-        }]
+        info: [
+            {
+                title: data.title,
+                duration: data.duration * 1000,
+                thumbnail: data.thumbnail,
+                engine: data.stream.url,
+                views: 0,
+                author: data.author.name,
+                description: '',
+                url: data.url
+            }
+        ]
     };
 };
 
