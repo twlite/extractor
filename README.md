@@ -1,6 +1,8 @@
 # Extractors
 Extractors for `discord-player`.
 
+# Source code is now available at https://github.com/Androz2091/discord-player
+
 # Example
 
 ```js
