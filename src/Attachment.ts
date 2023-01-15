@@ -13,23 +13,25 @@ export const getInfo = async (query: string) => {
 
     return {
         playlist: null as any,
-        info: [{
-            title: (
-                data.url
-                    .split('/')
-                    .filter((x) => x.length)
-                    .pop() ?? 'Attachment'
-            )
-                .split('?')[0]
-                .trim(),
-            duration: 0,
-            thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/ITunes_12.2_logo.png',
-            engine: data.url,
-            views: 0,
-            author: (data.stream as any).client.servername as string,
-            description: (data.stream as any).client.servername as string,
-            url: data.url
-        }]
+        info: [
+            {
+                title: (
+                    data.url
+                        .split('/')
+                        .filter((x) => x.length)
+                        .pop() ?? 'Attachment'
+                )
+                    .split('?')[0]
+                    .trim(),
+                duration: 0,
+                thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/ITunes_12.2_logo.png',
+                engine: data.url,
+                views: 0,
+                author: (data.stream as any).client.servername as string,
+                description: (data.stream as any).client.servername as string,
+                url: data.url
+            }
+        ]
     };
 };
 

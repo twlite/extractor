@@ -13,6 +13,16 @@ const player = new Player(client);
 player.use("reverbnation", Reverbnation);
 ```
 
+# Example in TS
+
+```ts
+import { Reverbnation } from "@discord-player/extractor";
+const player = new Player(client);
+
+// enables reverbnation player
+player.use("reverbnation", Reverbnation);
+```
+
 # Lyrics
 ```js
 const { Lyrics } = require("@discord-player/extractor");

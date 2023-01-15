@@ -12,17 +12,20 @@
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\""
   },
-  "author": "Snowflake107",
+  "author": "[DevAndromeda, Nicholaiii, GeekCornerGH, SiniMini876]",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.24.0",
+    "cheerio": "^1.0.0-rc.10",
     "genius-lyrics": "^4.3.5",
     "jsdom": "^16.5.3",
     "node-fetch": "^2.6.1",
-    "reverbnation-scraper": "^2.0.0"
+    "reverbnation-scraper": "^2.0.0",
+    "youtube-sr": "^4.1.11"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevSnowflake/discord-player-extractors.git"
+    "url": "git+https://github.com/discord-player/extractor.git"
   },
   "keywords": [
     "discord-player",
@@ -30,9 +33,9 @@
     "streams"
   ],
   "bugs": {
-    "url": "https://github.com/DevSnowflake/discord-player-extractors/issues"
+    "url": "https://github.com/discord-player/extractor/issues"
   },
-  "homepage": "https://github.com/DevSnowflake/discord-player-extractors#readme",
+  "homepage": "https://github.com/discord-player/extractor#readme",
   "devDependencies": {
     "@types/jsdom": "^16.2.10",
     "@types/node": "^15.0.1",

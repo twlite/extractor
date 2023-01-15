@@ -12,16 +12,18 @@ export const getInfo = async (query: string) => {
 
     return {
         playlist: null as any,
-        info: [{
-            title: data.title,
-            duration: data.duration,
-            thumbnail: data.thumbnail,
-            engine: data.streamURL,
-            views: 0,
-            author: data.artist.name,
-            description: '',
-            url: data.url
-        }]
+        info: [
+            {
+                title: data.title,
+                duration: data.duration,
+                thumbnail: data.thumbnail,
+                engine: data.streamURL,
+                views: 0,
+                author: data.artist.name,
+                description: '',
+                url: data.url
+            }
+        ]
     } as Reverbnation;
 };
 
